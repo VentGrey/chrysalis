@@ -1,5 +1,24 @@
-Porthole 0.6.0 (April, 2008)
-===========================
+# Chrysalis
+
+## DISCLAIMER: Chrysalis is a WIP project.
+
+Chrysalis is a GTK-based frontend for portage (Gentoo / Funtoo package manager)
+based upon [porthole](http://sourceforge.net/projects/porthole).
+
+Chrysalis tries to bring improvements to porhole. Since it is being built under
+a Funtoo base this package will be dependant on Funtoo libs which are known to
+be stable and reliable in most desktop systems.
+
+Chrysalis follows the original Porthole license which can be found in the
+LICENSE file (GPL-2).
+
+## Bug reports
+If you find any bugs in here please report it in the issues tab and not directly
+to porthole
+
+## Porthole changelogs
+
+# Porthole 0.6.0 (April, 2008)
 
 Porthole is a GTK-based frontend for Portage (the Gentoo package
 management system, http://www.gentoo.org/). It features a hierarchial
