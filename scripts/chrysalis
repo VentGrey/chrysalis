@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 
 '''
-    Porthole
+    Chrysalis
     A graphical frontend to Portage
 
-    Copyright (C) 2003 - 2008 Fredrik Arnerup and Daniel G. Taylor,
+    Copyright (C) 2003 - 2020 Fredrik Arnerup, Daniel G. Taylor, Omar Jair Purata,
     Brian Dolbec, William F. Wheeler, Brian Bockelman, Tommy Iorns
 
     This program is free software; you can redistribute it and/or modify
@@ -24,11 +24,11 @@
 import sys
 from getopt import getopt, GetoptError
 
-print "Porthole: python version = ", sys.version
+print "Chrysalis: python version = ", sys.version
 
 def usage():
     tabs = "\t\t"
-    print "Usage: porthole [OPTION...]\n"
+    print "Usage: chrysalis [OPTION...]\n"
     print "  -h, --help" + tabs + "Show this help message"
     print "  -l, --local" + tabs + \
           "Run a local version (use modules in current directory)"
