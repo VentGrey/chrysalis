@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 '''
     Porthole Advanced Emerge Dialog
@@ -32,16 +32,16 @@ import gtk.glade
 from gettext import gettext as _
 
 
-from porthole.utils import utils
-from porthole.utils import debug
-from porthole import config
-from porthole import backends
+from chrysalis.utils import utils
+from chrysalis.utils import debug
+from chrysalis import config
+from chrysalis import backends
 portage_lib = backends.portage_lib
-from porthole import db
-from porthole.backends.version_sort import ver_sort
-from porthole.backends.utilities import get_reduced_flags, abs_list, abs_flag
-from porthole.loaders.loaders import load_web_page
-from porthole.utils.dispatcher import Dispatcher
+from chrysalis import db
+from chrysalis.backends.version_sort import ver_sort
+from chrysalis.backends.utilities import get_reduced_flags, abs_list, abs_flag
+from chrysalis.loaders.loaders import load_web_page
+from chrysalis.utils.dispatcher import Dispatcher
 
 class AdvancedEmergeDialog:
     """Class to perform advanced emerge dialog functionality."""

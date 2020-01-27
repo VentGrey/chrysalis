@@ -1,7 +1,7 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 '''
-    Porthole Advanced Emerge Dialog
+    Chrysalis Advanced Emerge Dialog
     Allows the user to set options, use flags, keywords and select
     specific versions.  Has lots of tool tips, too.
 
