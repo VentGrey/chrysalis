@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 '''
-    Porthole backend module
+    Chrysalis backend module
     Holds all portage and related library functions for Porthole
 
     Copyright (C) 2003 - 2008 Fredrik Arnerup, Daniel G. Taylor
@@ -28,8 +28,8 @@ print "BACKENDS: id initialized to ", id
 
 import time
 
-from porthole import config
-from porthole.importer import my_import
+from chrysalis import config
+from chrysalis.importer import my_import
 
 while config.Prefs == None:
     print "BACKENDS: waiting for config.Prefs"
@@ -39,7 +39,7 @@ while config.Prefs == None:
 print "BACKENDS: PORTAGE setting = ", config.Prefs.PORTAGE
 
 if config.Prefs.PORTAGE == "portagelib":
-    from porthole.backends import portagelib
+    from chrysalis.backends import portagelib
     portage_lib = portagelib
 #portage_lib = my_import(config.Prefs.PORTAGE)
 
