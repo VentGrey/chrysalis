@@ -1,7 +1,7 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 """
-    Porthole XML Manager Module
+    Chrysalis XML Manager Module
 
     Copyright (C) 2004 - 2008 Wm. F. Wheeler
 

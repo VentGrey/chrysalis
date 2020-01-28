@@ -1,5 +1,5 @@
 ###############################################################################
-# Porthole Project - A Graphical Front-end to Portage
+# Chrysalis Project - A Graphical Front-end to Portage
 ###############################################################################
 # File name: xmlmgr.py
 #  Abstract: A class to encapsulate XML DOM functionality and simplify the
@@ -10,7 +10,7 @@
 #------------------------------------------------------------------------------ 
 # Legal Information
 """
-     Porthole XML Manager Module
+     Chrysalis XML Manager Module
 
      Copyright (C) 2004 - 2008 Wm. F. Wheeler, Brian Dolbec
 
