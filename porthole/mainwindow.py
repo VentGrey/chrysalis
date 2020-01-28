@@ -24,7 +24,7 @@
 '''
 import datetime
 id = datetime.datetime.now().microsecond
-print "MAINWINDOW: id initialized to ", id
+print("MAINWINDOW: id initialized to ", id)
 
 import pygtk; pygtk.require("2.0") # make sure we have the right version
 import gtk, gtk.glade, gobject

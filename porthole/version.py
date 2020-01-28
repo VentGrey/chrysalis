@@ -4,4 +4,4 @@ from gettext import gettext as _
 
 version = "0.6.0"
 
-copyright = _("Copyright (c) 2003 - 2009")
+copyright = _("Copyright (c) 2003 - 2020")
