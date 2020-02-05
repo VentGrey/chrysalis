@@ -2,6 +2,6 @@
 
 from gettext import gettext as _
 
-version = "0.6.0"
+version = "0.1.0-alpha"
 
 copyright = _("Copyright (c) 2003 - 2020")
