@@ -1,26 +1,5 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
-'''
-    Porthole
-    A graphical frontend to Portage
-
-    Copyright (C) 2003 - 2009 Fredrik Arnerup and Daniel G. Taylor,
-    Brian Dolbec, William F. Wheeler, Brian Bockelman, Tommy Iorns
-
-    This program is free software; you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation; either version 2 of the License, or
-    (at your option) any later version.
-
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
-
-    You should have received a copy of the GNU General Public License
-    along with this program; if not, write to the Free Software
-    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
-'''
 import datetime
 id = datetime.datetime.now().microsecond
 print "STARTUP: id initialized to ", id
@@ -44,10 +23,10 @@ if PORTAGE_MOD_PATH not in sys.path:
     
 #while '' in sys.path: # we don't need the cwd in the path
 #    sys.path.remove('')
-while '/usr/bin' in sys.path: # this gets added when we run /usr/bin/porthole
+while '/usr/bin' in sys.path: # this gets added when we run /usr/bin/chrysalis
     sys.path.remove('/usr/bin')
 
-APP = 'porthole'
+APP = 'chrysalis'
 LOG_FILE_DIR = "/var/log/porthole"
 DB_FILE_DIR = "/var/db/porthole"
 Choices = {"portage": 'portagelib', "pkgcore": 'pkgcore_lib', "dbus": "dbus_main" }
@@ -83,10 +62,10 @@ def create_dir(new_dir):
    
 
 def import_error(e):
-	print "*** Error loading porthole modules!\n*** If you are running a", \
+	print "*** Error loading chrysalis modules!\n*** If you are running a", \
 		"local (not installed in python's site-packages) version, please use the '--local'", \
 		"or '-l' flag.\n", \
-		"*** Otherwise, verify that porthole was installed correctly and", \
+		"*** Otherwise, verify that chrysalis was installed correctly and", \
 		"that python's path includes the site-packages directory.\n",\
 		"If you have recently updated python, then run 'python-updater'\n"
 	print "Your sys.path: %s\n" % sys.path
@@ -100,7 +79,7 @@ def local():
     # running a local version (i.e. not installed in /usr/*)
     import os
     print "STARTUP: local(); setting to local paths"
-    DATA_PATH = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))+"/porthole/"
+    DATA_PATH = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))+"/chrysalis/"
     #DATA_PATH = getcwd() + "/"
     i18n_DIR = DATA_PATH + 'i18n'
     RUN_LOCAL = True
@@ -129,7 +108,7 @@ def insert_path():
 
 
 def main():
-    """start the porthole frontend"""
+    """start the chrysalis frontend"""
     try:
         print "STARTUP: main(); thread id = ", thread.get_ident()
         print "STARTUP: main(); importing config"
@@ -169,7 +148,7 @@ def main():
     #os.putenv("PYGTK_USE_GIL_STATE_API", "True")
     gtk.gdk.threads_init()
 
-    debug.dprint("PORTHOLE: process id = %d ****************" %os.getpid())
+    debug.dprint("CHRYSALIS: process id = %d ****************" %os.getpid())
     # setup our app icon
     myicon = gtk.gdk.pixbuf_new_from_file(DATA_PATH + "pixmaps/porthole-icon.png")
     gtk.window_set_default_icon_list(myicon)
