@@ -3,10 +3,10 @@
 from distutils.core import setup
 from porthole.version import version as p_version
 
-datadir = "share/porthole/"
+datadir = "share/chrysalis/"
 
 setup( \
-    name = "porthole",
+    name = "chrysalis",
     version = p_version,
     description = "GTK+ frontend to Portage",
     author = "Fredrik Arnerup, Daniel G. Taylor, Brian Dolbec, William F. Wheeler",
